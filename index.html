@@ -236,21 +236,21 @@
           <article class="post">
             <img src="images/2.jpg" alt="Картинка к статье" class="post-img">
             <div class="content-of-news">
-              <time>14 июня 2019</time>
+              <time class="time_aside_article">14 июня 2019</time>
               <h4><a href="#0" class="post-link">10 мест, ради которых стоит проснуться</a></h4>
             </div>
           </article>
           <article class="post">
             <img src="images/151.jpg" alt="Картинка к статье" class="post-img">
             <div class="content-of-news">
-              <time>14 июня 2019</time>
+              <time class="time_aside_article">14 июня 2019</time>
               <h4><a href="#0" class="post-link">Йога для домашних</a></h4>
             </div>
           </article>
           <article class="post">
             <img src="images/45.jpg" alt="Картинка к статье" class="post-img">
             <div class="content-of-news">
-              <time>14 июня 2019</time>
+              <time class="time_aside_article">14 июня 2019</time>
 
               <h4><a href="#0" class="post-link">Как мы преврaтили классное место в балкон</a></h4>
             </div>
@@ -258,14 +258,14 @@
           <article class="post">
             <img src="images/501.jpg" class="post-img">
             <div class="content-of-news">
-              <time>14 июня 2019</time>
+              <time class="time_aside_article">14 июня 2019</time>
               <h4><a href="#0" class="post-link">Кулинарный подход к науке</a></h4>
             </div>
           </article>
           <article class="post">
             <img src="images/7.jpg" alt="Картинка к статье" class="post-img">
             <div class="content-of-news">
-              <time>14 июня 2019</time>
+              <time class="time_aside_article">14 июня 2019</time>
               <h4><a href="#0" class="post-link">Лучшие прически для распущенных волос</a></h4>
             </div>
           </article>
@@ -274,14 +274,14 @@
               <input type="search" class="field sea" name="query" placeholder="Найти..." required>
               <span class="visually-hidden">search</span>
             </label>
-            <button class="button-search"></button>
+            <button class="button-search"><span class="visually-hidden">search button</span></button>
           </form>
         </section>
-        <section class="subscription">
+        <form class="subscription">
           <h3>Рассылка</h3>
           <input class="field sub" placeholder="Ваш email-адрес">
           <button class="button-go sub">Подписаться</button>
-        </section>
+        </form>
         <section class="all-tags">
           <h3>Теги</h3>
           <ul class="all-tag-list">
@@ -315,22 +315,28 @@
           <h3>Темы</h3>
           <ul class="topics-list">
             <li class="topic-item">
-              <a href="#0" class="topic-link">Красота<span class="topic-number">12</span></a>
+              <a href="#0" class="topic-link">Красота</a>
+              <span class="topic-number">12</span>
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Здоровье<span class="topic-number">4</span></a>
+              <a href="#0" class="topic-link">Здоровье</a>
+              <span class="topic-number">4</span>
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Образ жизни<span class="topic-number">145</span></a>
+              <a href="#0" class="topic-link">Образ жизни</a>
+              <span class="topic-number">145</span>
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Музыка<span class="topic-number">28</span></a>
+              <a href="#0" class="topic-link">Музыка</a>
+              <span class="topic-number">28</span>
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Спорт<span class="topic-number">62</span></a>
+              <a href="#0" class="topic-link">Спорт</a>
+              <span class="topic-number">62</span>
             </li>
             <li class="topic-item">
-              <a href="#0" class="topic-link">Йога<span class="topic-number">8</span></a>
+              <a href="#0" class="topic-link">Йога</a>
+              <span class="topic-number">8</span>
             </li>
           </ul>
         </section>
@@ -401,68 +407,67 @@
   </div>
   <!--"Подвал" !-->
   <footer>
-    <adress>
+    <address>
       <ul class="socials">
         <li class="socials-item">
-          <a href="#0" class="socials-link link-dr"></a>
-          <span class="visually-hidden">dribble</span>
+          <a href="#0" class="socials-link link-dr"><span class="visually-hidden">dribble</span></a>
         </li>
         <li class="socials-item">
-          <a href="#0" class="socials-link link-pr"></a>
-          <span class="visually-hidden">pinterest</span>
+          <a href="#0" class="socials-link link-pr"><span class="visually-hidden">pinterest</span></a>
         </li>
         <li class="socials-item">
-          <a href="#0" class="socials-link link-ta"></a>
-          <span class="visually-hidden">tumblr</span>
+          <a href="#0" class="socials-link link-ta"><span class="visually-hidden">tumblr</span></a>
         </li>
       </ul>
-    </adress>
+    </address>
     <a href="#0" class="copyrights">
       Copyright © 2009–2019 City Blog LLC.
     </a>
   </footer>
 
-  <input type="checkbox" id="close_btn" class="close_btn">
-    <label for="close_btn" class="close_butt">
-      <span class="c_butt"></span>
-    </label>
   <div class="pop-up">
-    <h2 class="pop-up_title headblock">Ваш фидбек</h2>
-    <form class="form_how-often-come">
+    <input type="checkbox" id="close_btn" class="close_btn">
+    <label for="close_btn" class="close_butt">
+      <span class="c_butt"><span class="visually-hidden">close button</span></span>
+    </label>
+    <div class="pop-up_item">
+      <h2 class="pop-up_title headblock">Ваш фидбек</h2>
+      <form class="form_how-often-come">
+        <div class="form-group">
+         <label class="select-group">
+           <span class="discript-label">Как часто вы заходите на сайт?</span>
+            <select class="select">
+              <option value="" selected>Почти каждый день</option>
+              <option value="" selected>Раз в несколько дней</option>
+              <option value="">Раз в несколько недель</option>
+              <option value="">Несколько раз в год</option>
+            </select>
+          </label>
+        </div>
+      </form>
+
       <div class="form-group">
-        <label class="select-group">
-          <span class="discript-label">Как часто вы заходите на сайт?</span>
-          <select class="select">
-            <option value="" selected>Почти каждый день</option>
-            <option value="" selected>Раз в несколько дней</option>
-            <option value="">Раз в несколько недель</option>
-            <option value="">Несколько раз в год</option>
-          </select>
-        </label>
-      </div>
-    </form>
-
-    <div class="form-group">
-      <span class="discript-label">Вы подписаны на e-mail рассылку?</span>
-      <div class="choice">
-        <label class="checkbox-group">
-          <input type="radio" name="radio">
-          <span class="ch_text">Да</span>
-        </label>
-        <label class="checkbox-group">
-          <input type="radio" name="radio">
-          <span class="ch_text">Нет</span>
-        </label>
+        <span class="discript-label">Вы подписаны на e-mail рассылку?</span>
+        <div class="choice">
+          <label class="checkbox-group">
+            <input type="radio" name="radio">
+            <span class="ch_text">Да</span>
+          </label>
+          <label class="checkbox-group">
+            <input type="radio" name="radio">
+            <span class="ch_text">Нет</span>
+          </label>
+        </div>
       </div>
 
+      <div class="form-group">
+        <span class="discript-label about">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+        <label class="text-about-group">
+          <input type="text-area" class="text-about" placeholder="Может, больше рецептов?" required>
+        </label>
+      </div>
+      <button class="send_pop_up">Отправить<span class="visually-hidden">send button</span></button>
     </div>
-    <div class="form-group">
-      <span class="discript-label about">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-      <label class="text-about-group">
-        <input type="text" class="text-about" placeholder="Может, больше рецептов?" required>
-      </label>
-    </div>
-    <button class="send_pop_up">Отправить</button>
   </div>
 </body>
 
