@@ -629,29 +629,28 @@ address {
   overflow: hidden;
 }
 
+.pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 
 .pop-up_item {
+  position: relative;
   width: 392px;
-  min-height: 589px;
   padding: 52px 31px;
-  position: fixed;
-  top: 210px;
-  left: calc(50% - 392px / 2);
-  background-color: #ffffff;
+  background: #ffffff; 
   z-index: 2;
 }
 
-.pop-up::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  opacity: 0.6;
-  z-index: 1;
-}
 
 .close_btn {
   display: none;
@@ -659,29 +658,20 @@ address {
   top: 0;
   left: 0;
 }
+
 .close_butt {
   width: 20px;
   height: 20px;
-  position: fixed;
-  top: 185px;
-  left: calc(50% + 350px / 2);
+  position: absolute;
+  top: -25px;
+  right: 0;
   background-size: cover;
   background: url("../svg/form-x.svg"); 
   border: none;
   z-index: 2;
 }
 
-.close_btn:checked ~ .pop-up_item {
-  display: none;
-}
-.close_btn:checked ~ .close_butt {
-  display: none;
-}
 
-/* .close_btn:checked ~ .pop-up::after {
-  content: "";
-  opacity: 1;
-} */
 
 .form-group {
   margin-bottom: 29px;
@@ -714,46 +704,32 @@ address {
   border: 1px solid #b59f5b;
 }
 
-.choice {
-  display: flex;
-}
-.checkbox-group {
-  font-size: 13px;
-  display: flex; 
-  width: 60px;
-}
-
-input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-  margin-right: 3px;
-  font: inherit;
-  width: 1.15em;
-  height: 1.15em;
-  border: 2px solid #c4b37d;
-  border-radius: 50%;
-  transform: translateY(-0.075em);
-  display: flex;  
-}
-
-input[type="radio"]::before {
+.ch_text::before {
   content: "";
-  width: 0.65em;
-  height: 0.65em;
-  border-radius: 50%;
-  transform: scale(0);
-  box-shadow: inset 1em 1em #c4b37d;
-  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background-image: url("../svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  margin-right: 5px;
 }
 
-input[type="radio"]:checked::before {
-  transform: scale(1); //Кружочек внутри
-}
-
-.ch_text {
+.checkbox-group {
   margin-right: 15px;
 }
+.checkbox-group:last-child {
+  margin-right: 0;
+}
+.pop_radio {
+  display: none;
+}
+.pop_radio:checked ~ .ch_text::before {
+  background-image: url("../svg/form-circle.svg");
+}
+
 
 .about {
   font-size: 13px;
@@ -942,19 +918,11 @@ input[type="radio"]:checked::before {
   footer {
     width: 700px;
   }
-  adress {
+  address {
     width: 700px;
     padding: 31px 270px;
   }
 
-  .pop-up_item {
-    top: 220px;
-  }
-  .close_butt {
-  width: 30px;
-  height: 30px; 
-  top: 195px;
-}
 
 }
 
@@ -1161,25 +1129,13 @@ input[type="radio"]:checked::before {
   footer {
     max-width: 329px;
   }
-  adress {
+  address {
     width: 100%;
     padding: 29px 108px;
-    
   }
-
   .pop-up_item {
-  max-width: 329px;
-  min-height: 548px;
-  padding: 28px 20px;
-  top: 56px;
-  left: calc(50% - 329px / 2);
-  background-color: #ffffff;
-  z-index: 2;
-}
-.close_butt {
-  top: 23px;
-  left: calc(50% + 270px / 2);
-}
+    width: 340px;
+    padding: 28px 20px;
 }
 
 @media(max-width: 640px) and (orientation: landscape) {

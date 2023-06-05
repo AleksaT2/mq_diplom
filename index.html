@@ -426,16 +426,18 @@
   </footer>
 
   <div class="pop-up">
-    <input type="checkbox" id="close_btn" class="close_btn">
-    <label for="close_btn" class="close_butt">
-      <span class="c_butt"><span class="visually-hidden">close button</span></span>
-    </label>
     <div class="pop-up_item">
-      <h2 class="pop-up_title headblock">Ваш фидбек</h2>
-      <form class="form_how-often-come">
+      <button class="close_btn" id="close_btn"><span class="visually-hidden">close button</span></button>
+      <label for="close_btn" class="close_butt">
+        <span class="c_butt"></span>
+      </label>
+
+      <form class="form_pop-up">
+
+        <h2 class="pop-up_title headblock">Ваш фидбек</h2>
         <div class="form-group">
-         <label class="select-group">
-           <span class="discript-label">Как часто вы заходите на сайт?</span>
+          <label class="select-group">
+            <span class="discript-label">Как часто вы заходите на сайт?</span>
             <select class="select">
               <option value="" selected>Почти каждый день</option>
               <option value="" selected>Раз в несколько дней</option>
@@ -444,29 +446,27 @@
             </select>
           </label>
         </div>
-      </form>
 
-      <div class="form-group">
-        <span class="discript-label">Вы подписаны на e-mail рассылку?</span>
-        <div class="choice">
-          <label class="checkbox-group">
-            <input type="radio" name="radio">
-            <span class="ch_text">Да</span>
-          </label>
-          <label class="checkbox-group">
-            <input type="radio" name="radio">
-            <span class="ch_text">Нет</span>
-          </label>
+        <div class="form-group">
+          <span class="discript-label">Вы подписаны на e-mail рассылку?</span>
+          <div class="choice">
+            <label class="checkbox-group">
+              <input type="radio" class="pop_radio" name="radio">
+              <span class="ch_text">Да</span>
+            </label>
+            <label class="checkbox-group">
+              <input type="radio" class="pop_radio" name="radio">
+              <span class="ch_text">Нет</span>
+            </label>
+          </div>
         </div>
-      </div>
 
-      <div class="form-group">
-        <span class="discript-label about">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-        <label class="text-about-group">
-          <input type="text-area" class="text-about" placeholder="Может, больше рецептов?" required>
-        </label>
-      </div>
-      <button class="send_pop_up">Отправить<span class="visually-hidden">send button</span></button>
+        <div class="form-group">
+          <span class="discript-label about">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+          <textarea class="text-about">Может, больше рецептов?</textarea>
+        </div>
+        <button class="send_pop_up">Отправить<span class="visually-hidden">send button</span></button>
+      </form>
     </div>
   </div>
 </body>
