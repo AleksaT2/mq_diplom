@@ -17,9 +17,7 @@
   font-family: "OpenSans", "Arial", sans-serif;
 }
 
-body {
-  border: 2px solid red;
-}
+
 .header {
   position: relative;
   background-image: url("../images/banner-bg.jpg");
