@@ -478,6 +478,7 @@ article.post {
 .products_items {
   display: flex;
   padding: 0 20px;
+  justify-content: space-between;
 }
 
 .product_item {
@@ -882,10 +883,10 @@ address {
   }
 
   .product_item {
-    width: 42%;
-  }
+    width: 44%;
+    }
   .product_item_img {
-    width: 42%;
+    max-width: 100%;
   }
   .rabbit {
     margin-left: 59px;
@@ -905,6 +906,7 @@ address {
   }
 
   footer {
+    width: 100%;
     max-width: 700px;
   }
   address {
